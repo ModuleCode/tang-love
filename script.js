@@ -11,7 +11,8 @@ const noTexts = [
     "要不再想想？", 
     "不许选这个！ ", 
     "我会很伤心…", 
-    "不行:("
+    "不行:(",
+    "行吧"
 ];
 
 // No 按钮点击事件
@@ -49,10 +50,9 @@ noButton.addEventListener("click", function() {
 yesButton.addEventListener("click", function() {
     document.body.innerHTML = `
         <div class="yes-screen">
-            <h1 class="yes-text">!!!喜欢你!! ( >᎑<)♡︎ᐝ</h1>
-            <img src="images/hug.png" alt="拥抱" class="yes-image">
+            <video src="videos/a.mp4" autoplay></video>
         </div>
     `;
-
+    var audio = new Audio('audio/my-audio-file.mp3');
     document.body.style.overflow = "hidden";
 });
